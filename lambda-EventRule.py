@@ -85,7 +85,8 @@ class ExampleLambdaStack(Stack):
             self, "ExampleSchedulerRule",
             rule_name="Example-Scheduler-Rule",
             description="Description for the Scheduler Event Rule",
-            schedule=Schedule.rate(core.Duration.minutes(1))
+            schedule=Schedule.rate(core.Duration.minutes(1))       
+            # schedule=events.Schedule.cron( minute="0",hour="16",month="*",week_day="WED",year="*")
         )
 
         # Add the lambda function as a target to the rule
