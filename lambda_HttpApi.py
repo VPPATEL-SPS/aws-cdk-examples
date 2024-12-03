@@ -5,8 +5,10 @@ from aws_cdk import (
     aws_apigatewayv2 as apigwv2,
     aws_apigatewayv2_integrations as apigwv2_integrations
 )
+import aws_cdk as core
+from constructs import Construct
 
-class ExampleLambdaStack(Stack):
+class ExampleHttpApiLambdaStack(Stack):
     def __init__(self, scope: Construct, construct_id: str, **kwargs) -> None:
         super().__init__(scope, construct_id, **kwargs)
 
