@@ -4,8 +4,10 @@ from aws_cdk import (
     aws_iam as iam,
     aws_apigateway as apigw
 )
+import aws_cdk as core
+from constructs import Construct
 
-class ExampleLambdaStack(Stack):
+class ExampleRestApiLambdaStack(Stack):
     def __init__(self, scope: Construct, construct_id: str, **kwargs) -> None:
         super().__init__(scope, construct_id, **kwargs)
 
