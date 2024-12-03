@@ -6,10 +6,9 @@ from aws_cdk import (
     aws_iam as iam
 )
 import aws_cdk as core
-import os
 from constructs import Construct
 
-class ExampleLambdaStack(Stack):
+class ExampleEventRuleLambdaStack(Stack):
     def __init__(self, scope: Construct, construct_id: str, **kwargs) -> None:
         super().__init__(scope, construct_id, **kwargs)
 
