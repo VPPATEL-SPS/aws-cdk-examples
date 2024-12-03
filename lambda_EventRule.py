@@ -41,7 +41,7 @@ class ExampleEventRuleLambdaStack(Stack):
             }
         )
 
-        # Add the AWS Lambda Powertools layer
+        # Add the AWS Lambda Powertools layer (Optional)
         powertools_layer = _lambda.LayerVersion.from_layer_version_arn(
             self,
             id="LambdaPowertoolsLayer",
